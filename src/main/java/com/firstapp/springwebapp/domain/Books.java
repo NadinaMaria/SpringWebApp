@@ -23,7 +23,7 @@ public class Books {
         this.publisher = publisher;
     }
 
-    @ManyToMany //
+    @ManyToMany //mai multe carti la mai multi autori
     @JoinTable(name = "author_book",
             joinColumns = @JoinColumn(name = "book_id"),
             inverseJoinColumns = @JoinColumn(name = "author_id")
